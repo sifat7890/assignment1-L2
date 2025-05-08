@@ -35,17 +35,21 @@ Most of the time its use for generic functions and dynamic key access.
 
 
 Example:
+
 type Student={
 name:string;
 age:number;
 grade:string;
 }
 
-function getStudentInfo (student:Student,key:keyof Student){
+
+function getStudentInfo (student:Student,key:keyof Student)
+{
 return student[key];
 }
 
-const s1:Student={
+const s1:Student=
+{
 name:"omar",
 age:18,
 grade:"A"
